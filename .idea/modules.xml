@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ConstructionProjectAssistant.iml" filepath="$PROJECT_DIR$/ConstructionProjectAssistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ConstructionPA.iml" filepath="$PROJECT_DIR$/ConstructionPA.iml" />
+      <module fileurl="file://C:\Users\Dymyll\Documents\CIDM_4385\ConstructionPA\ConstructionProjectAssistant.iml" filepath="C:\Users\Dymyll\Documents\CIDM_4385\ConstructionPA\ConstructionProjectAssistant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
 </project>
