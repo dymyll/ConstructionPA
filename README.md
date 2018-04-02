@@ -17,3 +17,10 @@
 * Import workers into system
 * View ALL accounts
 * Make changes to accounts if needed
+
+========================================
+### Projects consist of:
+* Dates needed for completion
+* Customer Name
+* Location of Project
+* Images of requested project
