@@ -14,6 +14,6 @@
 * Contact customer for the corresponding project
 * Update project status
 ### Admin:
-*Import workers into system
-*View ALL accounts
-*Make changes to accounts if needed
+* Import workers into system
+* View ALL accounts
+* Make changes to accounts if needed
