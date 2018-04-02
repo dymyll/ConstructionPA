@@ -2,7 +2,7 @@
 
 ## Features
 
-*User Sign UP/Login
+* User Sign UP/Login
 ### CUSTOMERS:
 * Can create project requests
 * Take and upload pictures
