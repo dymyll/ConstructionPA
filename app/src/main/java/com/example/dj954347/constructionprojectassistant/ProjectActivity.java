@@ -8,6 +8,8 @@ public class ProjectActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_project);
+        //setContentView(R.layout.activity_project);
+        setContentView(R.layout.login_page);
+        //setContentView(R.layout.create_user);
     }
 }
