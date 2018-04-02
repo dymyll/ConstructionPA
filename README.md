@@ -3,16 +3,17 @@
 ## Features
 
 *User Sign UP/Login
-*###CUSTOMERS:
-* can create project requests
+###*CUSTOMERS:
+* Can create project requests
 * Take and upload pictures
 * Change profile information
 * Select project location
 * View and Contact Worker assigned to project
-*###Workers
-* can search, view and accept customer requests
+###*Workers:
+* Can search, view and accept customer project requests
 * Contact customer for the corresponding project
-*###Admin
-*import workers into system
-*view ALL accounts
-*make changes to accounts if needed
+* Update project status
+###*Admin:
+*Import workers into system
+*View ALL accounts
+*Make changes to accounts if needed
