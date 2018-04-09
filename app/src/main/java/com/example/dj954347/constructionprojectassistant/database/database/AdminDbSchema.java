@@ -4,6 +4,7 @@ import java.util.Date;
 
 /**
  * Created by Dymyll on 4/9/2018.
+ *
  */
 
 public class AdminDbSchema {

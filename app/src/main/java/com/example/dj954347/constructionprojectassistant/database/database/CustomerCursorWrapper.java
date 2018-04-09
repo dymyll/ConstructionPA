@@ -8,6 +8,7 @@ import java.util.UUID;
 
 /**
  * Created by Dymyll on 4/2/2018.
+ *
  */
 
 public class CustomerCursorWrapper extends CursorWrapper {

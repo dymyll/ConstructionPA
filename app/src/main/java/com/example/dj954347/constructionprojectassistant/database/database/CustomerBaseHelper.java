@@ -8,6 +8,7 @@ import com.example.dj954347.constructionprojectassistant.database.database.Custo
 
 /**
  * Created by Dymyll on 4/1/2018.
+ *
  */
 
 public class CustomerBaseHelper extends SQLiteOpenHelper {
