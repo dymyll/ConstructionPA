@@ -21,11 +21,13 @@ public class CustomerCursorWrapper extends CursorWrapper {
             String uuidString = getString(getColumnIndex(CustomerDbSchema.CustomerTable.Cols.UUID));
             String firstname = getString(getColumnIndex(CustomerDbSchema.CustomerTable.Cols.FIRSTNAME));
             String lastname = getString(getColumnIndex(CustomerDbSchema.CustomerTable.Cols.LASTNAME));
+            String username = getString(getColumnIndex(CustomerDbSchema.CustomerTable.Cols.USERNAME));
             String emailaddress = getString(getColumnIndex(CustomerDbSchema.CustomerTable.Cols.EMAILADDRESS));
             long dateofbirth = getLong(getColumnIndex(CustomerDbSchema.CustomerTable.Cols.DATEOFBIRTH));
             String password = getString(getColumnIndex(CustomerDbSchema.CustomerTable.Cols.PASSWORD));
 
             Customer customer = new Customer(UUID.fromString(uuidString));
+            customer.setUserName(username);
             customer.setFirstName(firstname);
             customer.setLastName(lastname);
             customer.setEmailAddress(emailaddress);

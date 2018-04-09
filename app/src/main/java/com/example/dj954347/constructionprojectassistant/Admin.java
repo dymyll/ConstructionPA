@@ -4,10 +4,10 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
- * Created by Dymyll on 4/2/2018.
+ * Created by Dymyll on 4/9/2018.
  */
 
-public class Customer {
+public class Admin {
 
     private UUID mId;
     private String mFirstName;
@@ -15,13 +15,13 @@ public class Customer {
     private String mEmailAddress;
     private Date mDateOfBirth;
     private String mPassword;
-    private String mUserName;
+    private String mAdminName;
 
-    public Customer() {
+    public Admin() {
         this(UUID.randomUUID());
     }
 
-    public Customer(UUID id) {
+    public Admin(UUID id) {
         mId = id;
     }
 
@@ -42,16 +42,16 @@ public class Customer {
         return mLastName;
     }
 
-    public void setLastName(String lastname) {
-        mLastName = lastname;
+    public void setLastName(String adminname) {
+        mLastName = adminname;
     }
 
-    public String getUserName() {
-        return mUserName;
+    public String getAdminName() {
+        return mAdminName;
     }
 
-    public void setUserName(String username) {
-        mUserName = username;
+    public void setAdminName(String username) {
+        mAdminName = username;
     }
 
 
@@ -78,6 +78,7 @@ public class Customer {
     public void setPassword(String password) {
         mPassword = password;
     }
+
 
 
 }
