@@ -18,6 +18,7 @@ import static com.example.dj954347.constructionprojectassistant.database.databas
 import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.FIRSTNAME;
 import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.LASTNAME;
 import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.PASSWORD;
+import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.USERNAME;
 
 /**
  * Created by Dymyll on 4/2/2018.
@@ -109,6 +110,7 @@ public class CustomerList {
         values.put(CustomerDbSchema.CustomerTable.Cols.UUID, customer.getId().toString());
         values.put(FIRSTNAME, customer.getFirstName());
         values.put(LASTNAME, customer.getLastName());
+        values.put(USERNAME, customer.getUserName());
         values.put(EMAILADDRESS, customer.getEmailAddress());
         values.put(DATEOFBIRTH, customer.getDateofBirth().toString());
         values.put(PASSWORD, customer.getPassword());

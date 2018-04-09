@@ -27,9 +27,12 @@ public class CustomerBaseHelper extends SQLiteOpenHelper {
         CustomerTable.Cols.UUID + ", " +
         CustomerTable.Cols.FIRSTNAME + ", " +
         CustomerTable.Cols.LASTNAME + ", " +
+
+                CustomerTable.Cols.USERNAME + ", " +
                 CustomerTable.Cols.EMAILADDRESS + ", " +
                 CustomerTable.Cols.DATEOFBIRTH + ", " +
                 CustomerTable.Cols.PASSWORD +
+
         ")"
         );
 
@@ -38,7 +41,7 @@ public class CustomerBaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
 
-        db.execSQL("DROP IF TABLE EXISTS " + CustomerTable.NAME);
-        onCreate(db);
+//        db.execSQL("DROP IF TABLE EXISTS " + CustomerTable.NAME);
+//        onCreate(db);
     }
 }

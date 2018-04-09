@@ -15,23 +15,23 @@ import java.util.UUID;
  * Created by Dymyll on 4/2/2018.
  */
 
-public class CreateUserFragment extends Fragment {
+public class CreateAdminFragment extends Fragment {
 
-    private static final String ARG_CUST_ID = "customer_id";
+    private static final String ARG_ADMIN_ID = "admin_id";
 
-    private Customer mCustomer;
-    private EditText mUserName;
+    private Admin mAdmin;
+    private EditText mAdminName;
     private EditText mFirstName;
     private EditText mLastName;
     private EditText mEmailAddress;
     private EditText mDateOfBirth;
     private EditText mPassword;
 
-    public static CreateUserFragment newInstance(UUID customerid) {
+    public static CreateAdminFragment newInstance(UUID adminid) {
         Bundle args = new Bundle();
-        args.putSerializable(ARG_CUST_ID, customerid);
+        args.putSerializable(ARG_ADMIN_ID, adminid);
 
-        CreateUserFragment fragment = new CreateUserFragment();
+        CreateAdminFragment fragment = new CreateAdminFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -39,18 +39,18 @@ public class CreateUserFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        UUID customerid = (UUID) getArguments().getSerializable(ARG_CUST_ID);
-        mCustomer = CustomerList.get(getActivity()).getCustomer(customerid);
+        UUID adminid = (UUID) getArguments().getSerializable(ARG_ADMIN_ID);
+        mAdmin = AdminList.get(getActivity()).getAdmin(adminid);
     }
-//This allows the users information in text fields to be connected to fields in the backend
+    //This allows the users information in text fields to be connected to fields in the backend
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_create_user, container, false);
 
-        mUserName = (EditText) v.findViewById(R.id.username);
-        mUserName.setText(mCustomer.getUserName());
-        mUserName.addTextChangedListener(new TextWatcher() {
+        mAdminName = (EditText) v.findViewById(R.id.username);
+        mAdminName.setText(mAdmin.getAdminName());
+        mAdminName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
@@ -58,7 +58,7 @@ public class CreateUserFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mCustomer.setFirstName(s.toString());
+                mAdmin.setFirstName(s.toString());
             }
 
             @Override
@@ -68,7 +68,7 @@ public class CreateUserFragment extends Fragment {
         });
 
         mFirstName = (EditText) v.findViewById(R.id.firstname);
-        mFirstName.setText(mCustomer.getFirstName());
+        mFirstName.setText(mAdmin.getFirstName());
         mFirstName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -77,7 +77,7 @@ public class CreateUserFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mCustomer.setFirstName(s.toString());
+                mAdmin.setFirstName(s.toString());
             }
 
             @Override
@@ -86,7 +86,7 @@ public class CreateUserFragment extends Fragment {
             }
         });
         mLastName = (EditText) v.findViewById(R.id.lastname);
-        mLastName.setText(mCustomer.getLastName());
+        mLastName.setText(mAdmin.getLastName());
         mLastName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -95,7 +95,7 @@ public class CreateUserFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mCustomer.setLastName(s.toString());
+                mAdmin.setLastName(s.toString());
             }
 
             @Override
@@ -106,7 +106,7 @@ public class CreateUserFragment extends Fragment {
 
 
         mEmailAddress = (EditText) v.findViewById(R.id.emailaddress);
-        mEmailAddress.setText(mCustomer.getEmailAddress());
+        mEmailAddress.setText(mAdmin.getEmailAddress());
         mEmailAddress.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -115,7 +115,7 @@ public class CreateUserFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mCustomer.setEmailAddress(s.toString());
+                mAdmin.setEmailAddress(s.toString());
             }
 
             @Override
@@ -126,7 +126,7 @@ public class CreateUserFragment extends Fragment {
 
     /*
         mDateOfBirth = (EditText) v.findViewById(R.id.dateofbirth);
-        mDateOfBirth.setText(mCustomer.getDateofBirth());
+        mDateOfBirth.setText(mAdmin.getDateofBirth());
         mDateOfBirth.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -135,7 +135,7 @@ public class CreateUserFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mCustomer.setPassword(s.toString());
+                mAdmin.setPassword(s.toString());
             }
 
             @Override
@@ -146,7 +146,7 @@ public class CreateUserFragment extends Fragment {
         */
 
         mPassword = (EditText) v.findViewById(R.id.password);
-        mPassword.setText(mCustomer.getPassword());
+        mPassword.setText(mAdmin.getPassword());
         mPassword.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -155,7 +155,7 @@ public class CreateUserFragment extends Fragment {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mCustomer.setPassword(s.toString());
+                mAdmin.setPassword(s.toString());
             }
 
             @Override
@@ -164,6 +164,6 @@ public class CreateUserFragment extends Fragment {
             }
         });
 
-            return v;
+        return v;
     }
 }
