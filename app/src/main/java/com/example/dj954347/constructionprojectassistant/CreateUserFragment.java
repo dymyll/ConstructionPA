@@ -1,14 +1,22 @@
 package com.example.dj954347.constructionprojectassistant;
 
-import android.app.Fragment;
+
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -166,4 +174,31 @@ public class CreateUserFragment extends Fragment {
 
             return v;
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        CustomerList.get(getActivity())
+                .updateCustomer(mCustomer);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != Activity.RESULT_OK) {
+            return;
+        }
+
+//        if (requestCode == REQUEST_DATE) {
+//            Date date = (Date) data
+//                    .getSerializableExtra(DatePickerFragment.EXTRA_DATE);
+//            mCrime.setDate(date);
+//            updateDate();
+//        }
+    }
+
+//    private void updateDate() {
+//        mDateButton.setText(mCrime.getDate().toString());
+//    }
 }
+

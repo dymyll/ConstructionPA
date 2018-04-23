@@ -1,10 +1,10 @@
-package com.example.dj954347.constructionprojectassistant.database.database;
+package com.example.dj954347.constructionprojectassistant.database;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.content.Context;
 
-import com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema.AdminTable;
+import com.example.dj954347.constructionprojectassistant.database.AdminDbSchema.AdminTable;
 
 /**
  * Created by Dymyll on 4/1/2018.

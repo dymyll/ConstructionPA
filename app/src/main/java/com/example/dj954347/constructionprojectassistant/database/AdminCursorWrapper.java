@@ -1,4 +1,4 @@
-package com.example.dj954347.constructionprojectassistant.database.database;
+package com.example.dj954347.constructionprojectassistant.database;
 
 import android.database.Cursor;
 import android.database.CursorWrapper;

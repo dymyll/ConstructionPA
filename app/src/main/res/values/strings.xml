@@ -4,6 +4,10 @@
     <string name="FirstName">First Name</string>
     <string name="UserName">Username</string>
     <string name="DOB">Date of Birth</string>
+    <string name="new_customer">New Customer</string>
     <string name="EmailAddress">Email Address</string>
+    <string name="show_subtitle">Show Subtitle</string>
     <string name="Password">Password</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="subtitle_format">%1$d crimes</string>
 </resources>

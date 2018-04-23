@@ -16,6 +16,7 @@ public class Customer {
     private Date mDateOfBirth;
     private String mPassword;
     private String mUserName;
+    private boolean mSolved;
 
     public Customer() {
         this(UUID.randomUUID());
@@ -77,6 +78,14 @@ public class Customer {
 
     public void setPassword(String password) {
         mPassword = password;
+    }
+
+    public boolean isSolved() {
+        return mSolved;
+    }
+
+    public void setSolved(boolean solved) {
+        mSolved = solved;
     }
 
 

@@ -5,20 +5,20 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.dj954347.constructionprojectassistant.database.database.AdminBaseHelper;
-import com.example.dj954347.constructionprojectassistant.database.database.AdminCursorWrapper;
-import com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema;
+import com.example.dj954347.constructionprojectassistant.database.AdminBaseHelper;
+import com.example.dj954347.constructionprojectassistant.database.AdminCursorWrapper;
+import com.example.dj954347.constructionprojectassistant.database.AdminDbSchema;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import static com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema.AdminTable.Cols.DATEOFBIRTH;
-import static com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema.AdminTable.Cols.EMAILADDRESS;
-import static com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema.AdminTable.Cols.FIRSTNAME;
-import static com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema.AdminTable.Cols.LASTNAME;
-import static com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema.AdminTable.Cols.PASSWORD;
-import static com.example.dj954347.constructionprojectassistant.database.database.AdminDbSchema.AdminTable.Cols.ADMINNAME;
+import static com.example.dj954347.constructionprojectassistant.database.AdminDbSchema.AdminTable.Cols.DATEOFBIRTH;
+import static com.example.dj954347.constructionprojectassistant.database.AdminDbSchema.AdminTable.Cols.EMAILADDRESS;
+import static com.example.dj954347.constructionprojectassistant.database.AdminDbSchema.AdminTable.Cols.FIRSTNAME;
+import static com.example.dj954347.constructionprojectassistant.database.AdminDbSchema.AdminTable.Cols.LASTNAME;
+import static com.example.dj954347.constructionprojectassistant.database.AdminDbSchema.AdminTable.Cols.PASSWORD;
+import static com.example.dj954347.constructionprojectassistant.database.AdminDbSchema.AdminTable.Cols.ADMINNAME;
 
 /**
  * Created by Dymyll on 4/2/2018.

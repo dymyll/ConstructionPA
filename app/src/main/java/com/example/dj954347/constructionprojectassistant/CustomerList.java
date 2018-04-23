@@ -5,20 +5,20 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.example.dj954347.constructionprojectassistant.database.database.CustomerBaseHelper;
-import com.example.dj954347.constructionprojectassistant.database.database.CustomerCursorWrapper;
-import com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema;
+import com.example.dj954347.constructionprojectassistant.database.CustomerBaseHelper;
+import com.example.dj954347.constructionprojectassistant.database.CustomerCursorWrapper;
+import com.example.dj954347.constructionprojectassistant.database.CustomerDbSchema;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.DATEOFBIRTH;
-import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.EMAILADDRESS;
-import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.FIRSTNAME;
-import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.LASTNAME;
-import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.PASSWORD;
-import static com.example.dj954347.constructionprojectassistant.database.database.CustomerDbSchema.CustomerTable.Cols.USERNAME;
+import static com.example.dj954347.constructionprojectassistant.database.CustomerDbSchema.CustomerTable.Cols.DATEOFBIRTH;
+import static com.example.dj954347.constructionprojectassistant.database.CustomerDbSchema.CustomerTable.Cols.EMAILADDRESS;
+import static com.example.dj954347.constructionprojectassistant.database.CustomerDbSchema.CustomerTable.Cols.FIRSTNAME;
+import static com.example.dj954347.constructionprojectassistant.database.CustomerDbSchema.CustomerTable.Cols.LASTNAME;
+import static com.example.dj954347.constructionprojectassistant.database.CustomerDbSchema.CustomerTable.Cols.PASSWORD;
+import static com.example.dj954347.constructionprojectassistant.database.CustomerDbSchema.CustomerTable.Cols.USERNAME;
 
 /**
  * Created by Dymyll on 4/2/2018.
